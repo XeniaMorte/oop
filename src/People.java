@@ -3,11 +3,20 @@ public class People {
     int yearOfBirth;
     String town;
     String job;
-    public People(String name,String town, int yearOfBirth,String job){
+    public People(String name,String town, int yearOfBirth,String job) throws Exception {
         this.town=town;
         this.name=name;
-        this.yearOfBirth=yearOfBirth;
+        this.yearOfBirth=yearOfBirth <=0 ? 0: yearOfBirth;
         this.job=job;
+        if (this.town==null){
+            throw new Exception("«Информация не указана» ");
+        }
+        if (this.name==null){
+            throw new Exception("«Информация не указана» ");
+        }
+        if (this.job==null){
+            throw new Exception("«Информация не указана» ");
+        }
 
     }
 
