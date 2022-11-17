@@ -1,8 +1,8 @@
 public class People {
-    String name;
-    int yearOfBirth;
-    String town;
-    String job;
+     private String name;
+   private int yearOfBirth;
+    private String town;
+   private String job;
     public People(String name,String town, int yearOfBirth,String job) throws Exception {
         this.town=town;
         this.name=name;

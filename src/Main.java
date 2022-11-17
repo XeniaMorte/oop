@@ -7,6 +7,7 @@ public class Main {
         People aya = new People("Аня", "Москва", 1993, "методист образовательных программ");
         People katya = new People(" Катя", "Калининград", 1995, "продакт менеджер");
         People artem = new People(" Артем", "Москва", 1992, "директор по развитию бизнеса");
+        People vladimir= new People("Владимир", "Казань", 1994," ");
 
         maxim.znakomstvo();
         aya.znakomstvo();
@@ -18,5 +19,6 @@ public class Main {
         aya.znakomstvoAndJob();
         katya.znakomstvoAndJob();
         artem.znakomstvoAndJob();
+        vladimir.znakomstvoAndJob();
     }
 }
